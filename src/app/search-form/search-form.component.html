@@ -1,0 +1,24 @@
+<div class="container mt-5">
+    <form [formGroup]="searchForm" (ngSubmit)="onSearch()" class="formulario">
+      <div class="mb-3">
+        <p class="parrafo">Todos los campos son obligatorios</p>
+        <label for="type" class="form-label">Tipo de Documento</label>
+        <select id="type" formControlName="type" class="form-select" required>
+          <option value="" disabled selected>Selecciona...</option>
+          <option value="C">Cédula de ciudadanía</option>
+          <option value="P">Pasaporte</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="documentNumber" class="form-label">Número de Documento</label>
+        <input
+          id="documentNumber"
+          formControlName="documentNumber"
+          type="text"
+          class="form-control"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-radius boton" [disabled]="searchForm.invalid">Buscar</button>
+    </form>
+</div>

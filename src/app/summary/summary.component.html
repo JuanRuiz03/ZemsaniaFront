@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <div class="mb-3">
+    <h5 class="card-title">Información básica</h5>
+
+    <div *ngIf="errorMessage" class="alert alert-danger">
+      {{ errorMessage }}
+    </div>
+
+    <p>Primer Apellido:</p>
+    <input type="text" class="form-control" placeholder="{{ clientInfo?.firstSurname }}" readonly/>
+    <p>Primer Nombre:</p>
+    <input type="text" class="form-control" placeholder="{{ clientInfo?.firstName }}" readonly/>
+    <p></p>
+    <button (click)="goBack()" class="btn btn-secondary">Volver</button>
+  </div>
+</div>

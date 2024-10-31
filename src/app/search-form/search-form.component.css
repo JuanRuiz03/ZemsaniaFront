@@ -1,0 +1,48 @@
+.parrafo
+{
+  font-size: small;
+  color: grey;
+  margin-left: 60px;
+}
+
+.form-control {
+  width: 70%;
+  margin-bottom: 10px;
+  margin-left: 60px;
+}
+
+.form-select {
+  width: 70%;
+  margin-bottom: 10px;
+  margin-left: 60px;
+}
+.form-label {
+  color: #385b96;
+  font-size: small;
+  margin-left: 60px;
+  font-weight: 500;
+}
+
+.boton {
+  width: 60%;
+  margin-left: 80px;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 3vmax;
+  background-color: #002c76;
+  color: white;
+  padding: 10px;
+  font-size: small;
+}
+
+.formulario {
+
+  width: 30%;
+  background-color: #f7fbff;
+}
+
+.btn:disabled{
+
+  background-color: #eaeef2;
+  color: #bcbfc2;
+}
